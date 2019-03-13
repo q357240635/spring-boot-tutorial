@@ -1,7 +1,4 @@
 Spring Boot - 构建优雅的Restful API
-96  番薯IT 
-2017.12.05 23:00 字数 674 阅读 1974评论 0喜欢 3
-SpringBoot是搭建微服务的利器，那么微服务于微服务之间如果交互调用？RPC是一种，但是Restful风格的Http请求也是其中一种。
 
 什么是Restful
 REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络系统，比如 web 应用程序。它首次出现在 2000 年 Roy Fielding 的博士论文中，他是 HTTP 规范的主要编写者之一。在目前主流的三种Web服务交互方案中，REST相比于SOAP（Simple Object Access protocol，简单对象访问协议）以及XML-RPC更加简单明了，无论是对URL的处理还是对Payload的编码，REST都倾向于用更加简单轻量的方法设计和实现。值得注意的是REST并没有一个明确的标准，而更像是一种设计的风格。-- 摘自百度百科
@@ -39,11 +36,16 @@ GET、HEAD、POST、PUT、PATCH、DELETE、OPTIONS、TRACE。
 我们常用的有POST、DELETE、PUT、GET，分别对应我们的增删改查。
 
 GET /users：获取用户列表
+
 GET /users/{uid} 获取某个用户信息
+
 POST /users 新增一个用户
+
 PUT /users/{uid} 修改某个用户信息
+
 DELETE /users/{uid} 删除某个用户
-更多资料请看RESTful API 设计指南
+
+
 
 application.properties配置
 设置了上下文路径，MyBatis配置以及连接MySQL数据库
