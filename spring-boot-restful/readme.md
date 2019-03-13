@@ -16,7 +16,6 @@ IDEA -> New -> Project -> Spring Initializr -> 填写Group和Artifact -> Next ->
 
 创建相应包、类和文件
 需要创建一些包、类和相应的文件
-
 com.roachfu.tutorial
     controller
         DemoController.java
@@ -142,8 +141,10 @@ public class DemoServiceImpl implements DemoService {
 打开Postman，并设置对应的方法，例如用POST请求新增一个Demo
 新增一个Demo
 测试其他的方法并查看结果
+```
 GET http://localhost:8080/tutorial/demos
 GET http://localhost:8080/tutorial/demos/1
 PUT http://localhost:8080/tutorial/demos/1
 DELETE http://localhost:8080/tutorial/demos/1
+```
 好吧，优雅的Restful API 我们就搞定了
