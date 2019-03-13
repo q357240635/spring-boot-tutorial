@@ -48,18 +48,20 @@ DELETE /users/{uid} 删除某个用户
 
 application.properties配置
 设置了上下文路径，MyBatis配置以及连接MySQL数据库
-
+```
 server.context-path=/tutorial
 
 mybatis.type-aliases-package=com.roachfu.tutorial.entity
-
 mybatis.configuration.map-underscore-to-camel-case=true
 
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.datasource.url=jdbc:mysql://192.168.56.2:3306/spring_boot?useUnicode=true&characterEncoding=utf-8
 spring.datasource.username=root
 spring.datasource.password=Fanshu_123456
+```
+
 DemoController
+```
 @RestController
 @RequestMapping("/demos")
 public class DemoController {
@@ -94,6 +96,8 @@ public class DemoController {
         return demoService.delete(id);
     }
 }
+```
+
 @GetMapping 等价于 @RequestMapping(method = RequestMethod.GET)
 @GetMapping("/{id}") 等价于 @RequestMapping(value = "/{id}", method = RequestMethod.GET)
 @PostMapping 等价于 @RequestMapping(method = RequestMethod.POST)
