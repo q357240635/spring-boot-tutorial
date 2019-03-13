@@ -53,6 +53,7 @@ application.properties配置
 server.context-path=/tutorial
 
 mybatis.type-aliases-package=com.roachfu.tutorial.entity
+
 mybatis.configuration.map-underscore-to-camel-case=true
 
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
